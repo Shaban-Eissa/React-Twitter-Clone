@@ -11,7 +11,7 @@ function TweetBox() {
     const sendTweet = (e) => {
         e.preventDefault()
 
-        if(tweetMessage.length !==0  && tweetImage.length !==0) {
+        if(tweetMessage.length !==0  || tweetImage.length !==0) {
             db.collection('posts').add({
                 displayName : 'Shaban' ,
                 username :  'shiba' ,
